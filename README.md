@@ -50,7 +50,16 @@ curl http://52.196.251.106/j/54
     ]
 }
 ```
+## Get the  provable battle results zkp txt
+```
+curl http://52.196.251.106/battle/hash
 
+{
+    "hash":"hash", 
+    "result":"loss"
+    
+}
+```
 
 <a href="https://twitter.com/dojostarknet">
 <img src="https://img.shields.io/twitter/follow/dojostarknet?style=social"/>
