@@ -26,7 +26,10 @@ Read the full tutorial [here](https://book.dojoengine.org/cairo/hello-dojo.html)
 
 ## Contribution
 
-This starter project is a constant work in progress and contributions are greatly appreciated!
+The main body of the project is developed by the unity-dojo library.
+It is the first practice of perfecting the dojo-unity library plug-in and opening up the difference between the unity engine and full-chain games.
+Usage can be referred to
+https://github.com/dojoengine/dojo.unity
 
 1. **Report a Bug**
 
