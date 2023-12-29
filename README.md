@@ -40,13 +40,13 @@ starkli parse-cairo-string 0x000000000000687474703a2f2f35322e3139362e3235312e313
 curl http://52.196.251.106/j/54
 
 {
-    "name":"spaceship #54", // nft 名称
-    "image":"http://52.196.251.106/images/ef57ce656be60bcfae725f0f5c3aa944.png", // NFT 对应的图片地址
-    "attributes":[  // 属性名 属性值
-        {"trait_type":"level","value":3},    // 当前 NFT 等级为 3
-        {"trait_type":"quality","value":3},  // 当前 NFT 品质为 3
-        {"trait_type":"gas","value":5},      // 当前 NFT 力量为 5
-        {"trait_type":"rigidity","value":85} // 当前 NFT 刚性为 85
+    "name":"spaceship #54", 
+    "image":"http://52.196.251.106/images/ef57ce656be60bcfae725f0f5c3aa944.png", 
+    "attributes":[ 
+        {"trait_type":"level","value":3},    
+        {"trait_type":"quality","value":3},  
+        {"trait_type":"gas","value":5},      
+        {"trait_type":"rigidity","value":85} 
     ]
 }
 ```
