@@ -1,7 +1,56 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/mark-dark.svg">
   <img alt="Dojo logo" align="right" width="120" src=".github/mark-light.svg">
-</picture>
+</picture>[readme.md](https://github.com/creayCryptor/unity-dojo-contract/files/13795341/readme.md)
+
+How to verify minted NFT in craftpunk
+
+## Install starkli client
+```
+curl https://get.starkli.sh | sh
+```
+## Restart the terminal
+## Execute starkliup command
+## Restart the terminal
+## Execute starkli --version to view the starkli version number
+
+
+## View account NFT balance
+```
+starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 balanceOf 0x517ececd29116499f4a1b64b094da79ba08dfd54a3edaa316134c41f8160973
+```
+
+## Query the owner based on tokenId
+
+```
+starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 ownerOf u256:62
+```
+
+## Query tokenUri based on tokenId
+```
+starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 token_uri u256:62
+```
+## Parsing NFT short strings
+```
+starkli parse-cairo-string 0x000000000000687474703a2f2f35322e3139362e3235312e3130362f6a2f3534
+```
+
+## Get the corresponding nft attribute information based on url
+```
+curl http://52.196.251.106/j/54
+
+{
+    "name":"spaceship #54", // nft 名称
+    "image":"http://52.196.251.106/images/ef57ce656be60bcfae725f0f5c3aa944.png", // NFT 对应的图片地址
+    "attributes":[  // 属性名 属性值
+        {"trait_type":"level","value":3},    // 当前 NFT 等级为 3
+        {"trait_type":"quality","value":3},  // 当前 NFT 品质为 3
+        {"trait_type":"gas","value":5},      // 当前 NFT 力量为 5
+        {"trait_type":"rigidity","value":85} // 当前 NFT 刚性为 85
+    ]
+}
+```
+
 
 <a href="https://twitter.com/dojostarknet">
 <img src="https://img.shields.io/twitter/follow/dojostarknet?style=social"/>
