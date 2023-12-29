@@ -50,7 +50,7 @@ curl http://52.196.251.106/j/54
     ]
 }
 ```
-## Get the  provable battle results zkp txt
+## Get the  provable battle results by zkp txt
 ```
 curl http://52.196.251.106/battle/hash
 
