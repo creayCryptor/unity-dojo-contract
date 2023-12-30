@@ -1,65 +1,81 @@
-<picture>
+[readMe.md](https://github.com/creayCryptor/unity-dojo-contract/files/13797445/readMe.md)<picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/mark-dark.svg">
   <img alt="Dojo logo" align="right" width="120" src=".github/mark-light.svg">
 </picture>[readme.md](https://github.com/creayCryptor/unity-dojo-contract/files/13795341/readme.md)
 
 How to verify minted NFT in craftpunk
 
+[Uploading re## 部署 NFT 时, admin 账号信息
+
+
 ## Install starkli client
 ```
 curl https://get.starkli.sh | sh
 ```
-## Restart the terminal
-## Execute starkliup command
-## Restart the terminal
-## Execute starkli --version to view the starkli version number
 
+## Restart the terminal
+## excute starkliup 
+## Restart terminal
+## excute starkli --version starkli 
 
-## View account NFT balance
+![image-1](https://github.com/creayCryptor/unity-dojo-contract/assets/155175555/ee54d109-a63c-431d-aaf0-d4ddd6596654)
+
+## Append environment path
+
+<img width="798" alt="image-2" src="https://github.com/creayCryptor/unity-dojo-contract/assets/155175555/c6765614-fc40-4c43-b6ec-566ae7851a37">
+
+## Check account NFT balance
 ```
-starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 balanceOf 0x517ececd29116499f4a1b64b094da79ba08dfd54a3edaa316134c41f8160973
+starkli call 0x064ce5d864bd1541a009ec11af78994172129bc51eea5a4a4335d260d81d9c60 balanceOf 0x517ececd29116499f4a1b64b094da79ba08dfd54a3edaa316134c41f8160973
 ```
+![image-6](https://github.com/creayCryptor/unity-dojo-contract/assets/155175555/7ce2bf45-76ed-46ce-af0a-eb1439bbd915)
+
 
 ## Query the owner based on tokenId
+```
+starkli call 0x064ce5d864bd1541a009ec11af78994172129bc51eea5a4a4335d260d81d9c60 ownerOf u256:7
+```
+![image-7](https://github.com/creayCryptor/unity-dojo-contract/assets/155175555/0444922b-6842-469e-bb47-c904b94121dd)
 
-```
-starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 ownerOf u256:62
-```
 
 ## Query tokenUri based on tokenId
-```
-starkli call 0x06fc941fec3ef5929d73b6213a66e98b5d7088a07942ece4eb96875b816fe430 token_uri u256:62
-```
-## Parsing NFT short strings
+‵‵`
+starkli call 0x064ce5d864bd1541a009ec11af78994172129bc51eea5a4a4335d260d81d9c60 token_uri u256:2
+![image-8](https://github.com/creayCryptor/unity-dojo-contract/assets/155175555/ed936d04-ab2f-4b45-bc19-81b83a3c6cb7)
+
+
+## Query battle zero-knowledge proof results
 ```
 starkli parse-cairo-string 0x000000000000687474703a2f2f35322e3139362e3235312e3130362f6a2f3534
 ```
+![Alt text](image-9.png)
 
+## Get the battle zero-knowledge proof results
+```
+curl http://52.196.251.106/verify/zkp
+
+{
+    "reslut":"win", 
+}
+
+```
 ## Get the corresponding nft attribute information based on url
+
 ```
 curl http://52.196.251.106/j/54
 
 {
     "name":"spaceship #54", 
     "image":"http://52.196.251.106/images/ef57ce656be60bcfae725f0f5c3aa944.png", 
-    "attributes":[ 
+    "attributes":[  
         {"trait_type":"level","value":3},    
         {"trait_type":"quality","value":3},  
         {"trait_type":"gas","value":5},      
         {"trait_type":"rigidity","value":85} 
-    ]
-}
-```
-## Get the  provable battle results by zkp txt
-```
-curl http://52.196.251.106/battle/hash
+    ]}
 
-{
-    "hash":"hash", 
-    "result":"loss"
-    
-}
-```
+```adMe.md…]()
+
 
 <a href="https://twitter.com/dojostarknet">
 <img src="https://img.shields.io/twitter/follow/dojostarknet?style=social"/>
